@@ -3,8 +3,19 @@ import React from "react";
 function Header() {
   return (
     <div>
-      <div className="w-[100vw] h-[100vh] flex justify-center items-center">
-        hey boy
+      <div className="md:h-[20vh] h-[10vh] fixed text-[13px] w-full text-black flex justify-between pl-10 pr-10 md:gap-40 gap-15  items-center">
+        <a href="" className="border-b-1 border-black">
+          HOME
+        </a>
+        <a href="" className="hidden md:block border-b-1 border-black">
+          PLAYBOOK
+        </a>
+        <a href="" className="hidden md:block border-b-1 border-black">
+          SOCIALS
+        </a>
+        <a href="" className="border-b-1 border-black">
+          CONTACTS
+        </a>
       </div>
     </div>
   );

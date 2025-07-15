@@ -42,15 +42,12 @@ function Intro() {
       >
         <div
           ref={nameRef}
-          className="flex lg:text-9xl mb-40 sm:text-2xl tracking-wide gap-3"
+          style={{
+            fontFamily: "Playfair Display, serif",
+          }}
+          className="flex flex-col md:flex-row items-center gap-2 lg:text-9xl mb-40 sm:text-2xl tracking-wide text-center md:text-left"
         >
-          <span
-            style={{
-              fontFamily: "Playfair Display, serif",
-            }}
-          >
-            VIVEK
-          </span>{" "}
+          VIVEK{" "}
           <span
             style={{
               fontFamily: "Playfair Display, serif",
@@ -59,16 +56,10 @@ function Intro() {
           >
             JHA
           </span>{" "}
-          <span
-            style={{
-              fontFamily: "Playfair Display, serif",
-            }}
-          >
-            is a
-          </span>
+          IS A
         </div>
         <svg
-          className="w-20 h-20"
+          className="md:w-20 md:h-20 w-10 h-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 200 200"
         >

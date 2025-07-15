@@ -4,7 +4,8 @@ function page1() {
   return (
     <div>
       <div className="w-screen h-[100vh] text-black flex justify-center items-center">
-        hi
+        <div id="row1"></div>
+        <div id="row2"></div>
       </div>
     </div>
   );
