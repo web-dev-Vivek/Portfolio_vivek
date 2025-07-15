@@ -5,10 +5,12 @@ import PAGE2 from "./pages/page2.jsx";
 import PAGE3 from "./pages/page3.jsx";
 import PAGE4 from "./pages/page4.jsx";
 import PAGE5 from "./pages/page5.jsx";
+import Intro from "./pages/Intro.jsx";
 
 function App() {
   return (
     <>
+      <Intro />
       <HEADER />
       <PAGE1 />
       <PAGE2 />
