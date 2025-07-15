@@ -47,16 +47,17 @@ function Intro() {
           }}
           className="flex flex-col md:flex-row items-center gap-2 lg:text-9xl mb-40 sm:text-2xl tracking-wide text-center md:text-left"
         >
-          VIVEK{" "}
+          <span className="mr-5">Vivek</span>
           <span
+            className="mr-5"
             style={{
               fontFamily: "Playfair Display, serif",
               color: "rgb(20, 207, 147)",
             }}
           >
             JHA
-          </span>{" "}
-          IS A
+          </span>
+          <span>is A</span>
         </div>
         <svg
           className="md:w-20 md:h-20 w-10 h-10"
