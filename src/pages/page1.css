@@ -1,7 +1,7 @@
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: draw 5s ease forwards;
+  animation: draw 5s ease 5s forwards;
 }
 
 @keyframes draw {
