@@ -45,10 +45,10 @@ function Intro() {
           ref={intro1Ref}
           className="h-[100vh] bg-black flex flex-col justify-center items-center text-white text-4xl font-bold fixed top-0 left-0 right-0 m-auto z-50"
         >
-          <div className="flex flex-col md:flex-row items-center gap-2 lg:text-9xl mb-40 sm:text-2xl tracking-wide text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center gap-2 mb-40 md:text-9xl  text-5xl tracking-wide text-center md:text-left">
             {/* Vivek - DM Serif Text Italic */}
             <span
-              className="mr-5"
+              className="mr-5  md:text-9xl text-5xl"
               style={{
                 fontFamily: "'DM Serif Text', serif",
               }}
@@ -58,7 +58,7 @@ function Intro() {
 
             {/* JHA - Bebas Neue */}
             <span
-              className="mr-5"
+              className="mr-5  md:text-9xl  text-5xl"
               style={{
                 fontFamily: "'Bebas Neue', sans-serif",
                 letterSpacing: "0.05em",
@@ -70,6 +70,7 @@ function Intro() {
 
             {/* is A - Dancing Script */}
             <span
+              className="mr-5  md:text-9xl  text-5xl"
               style={{
                 fontFamily: "'DM Serif Text', serif",
                 fontWeight: 600,

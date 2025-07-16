@@ -9,7 +9,7 @@ import Intro from "./pages/Intro.jsx";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Intro />
       <HEADER />
       <PAGE1 />
@@ -17,7 +17,7 @@ function App() {
       <PAGE3 />
       <PAGE4 />
       <PAGE5 />
-    </>
+    </div>
   );
 }
 

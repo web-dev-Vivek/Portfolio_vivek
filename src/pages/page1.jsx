@@ -53,7 +53,7 @@ function Page1() {
 
         {/* ROW 2 */}
         <div
-          className="text-[16vw] font-bold flex flex-col md:flex-row items-center justify-center text-center md:text-left"
+          className="text-[16vw] w-[100vw] font-bold flex flex-col md:flex-row items-center justify-center text-center md:text-left"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
           {/* FRONTEND SVG */}
@@ -61,7 +61,7 @@ function Page1() {
             <svg
               style={{ color: "rgb(20, 207, 147)" }}
               viewBox="0 0 600 120"
-              className="w-[90%] min-w-md md:pl-0 md:pr-0 pl-40 pr-10"
+              className="md:w-[90%] w-[80vw] min-w-md md:pl-0 md:pr-0 pl-30 pr-15"
               fill="rgb(20, 207, 147)"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -83,7 +83,7 @@ function Page1() {
           </div>
 
           {/* Developer text */}
-          <div id="row2" className="text-8xl md:text-[16vw] md:mt-4 md:mt-0">
+          <div id="row2" className="text-[23vw] md:text-[16vw] md:mt-4 md:mt-0">
             Developer
           </div>
         </div>
