@@ -30,10 +30,10 @@ function Page1() {
 
   return (
     <div ref={container}>
-      <div className="w-screen h-[100vh] text-black flex flex-col justify-center items-center">
+      <div className="w-screen md:h-[90vh] text-black flex flex-col justify-center items-center">
         <div
           id="row1"
-          className="flex leading-none items-center mt-15 md:flex-row flex-col md:gap-20"
+          className="flex leading-none items-center mt-30 md:flex-row flex-col md:gap-20"
         >
           <h1
             className="text-[30vw] md:text-[16vw] overflow-hidden font-bold"
@@ -83,7 +83,7 @@ function Page1() {
           </div>
 
           {/* Developer text */}
-          <div id="row2" className="text-[23vw] md:text-[16vw] md:mt-4 md:mt-0">
+          <div id="row2" className="text-[23vw] md:text-[14vw] md:mt-4 md:mt-0">
             Developer
           </div>
         </div>
