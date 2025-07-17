@@ -14,10 +14,11 @@ function Page2() {
   useGSAP(
     () => {
       gsap.to("#img1", {
-        rotate: 30,
+        rotate: 5,
+        duration: 3,
         scrollTrigger: {
           trigger: "#img1",
-          start: "top 90%", // 🟢 early start
+          start: "top 200%", // 🟢 early start
           end: "bottom bottom", // 🔴 end at full scroll
           scrub: 3,
           markers: true,
@@ -26,10 +27,11 @@ function Page2() {
       });
 
       gsap.to("#img2", {
-        rotate: 30,
+        rotate: 5,
+        duration: 3,
         scrollTrigger: {
           trigger: "#img2",
-          start: "top 90%",
+          start: "top 200%",
           end: "bottom bottom",
           scrub: 3,
           markers: true,
@@ -38,10 +40,11 @@ function Page2() {
       });
 
       gsap.to("#img3", {
-        rotate: 30,
+        rotate: 5,
+        duration: 3,
         scrollTrigger: {
           trigger: "#img3",
-          start: "top 90%",
+          start: "top 200%",
           end: "bottom bottom",
           scrub: 3,
           markers: true,
@@ -56,7 +59,7 @@ function Page2() {
     <div>
       <div
         ref={container1}
-        className="w-screen md:flex-row h-[100vh] flex justify-center items-center"
+        className="w-screen md:flex-row  flex justify-center items-center"
       >
         <div className="md:w-[20vw] md:text-4xl">
           I am Vivek Jha, I create unconventional yet functional & visually
@@ -70,7 +73,7 @@ function Page2() {
           >
             <img
               className="grayscale hover:grayscale-0 transition-all duration-1000"
-              src={img1}
+              src={img3}
               alt=""
             />
           </div>
@@ -92,7 +95,7 @@ function Page2() {
           >
             <img
               className="grayscale hover:grayscale-0 transition-all duration-1000"
-              src={img3}
+              src={img1}
               alt=""
             />
           </div>
