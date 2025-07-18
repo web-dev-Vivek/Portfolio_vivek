@@ -14,11 +14,11 @@ function Page2() {
   useGSAP(
     () => {
       gsap.to("#img1", {
-        rotate: 5,
+        rotate: 10,
         duration: 3,
         scrollTrigger: {
           trigger: "#img1",
-          start: "top 200%", // 🟢 early start
+          start: "top 170%", // 🟢 early start
           end: "bottom bottom", // 🔴 end at full scroll
           scrub: 3,
           markers: true,
@@ -27,11 +27,11 @@ function Page2() {
       });
 
       gsap.to("#img2", {
-        rotate: 5,
+        rotate: 10,
         duration: 3,
         scrollTrigger: {
           trigger: "#img2",
-          start: "top 200%",
+          start: "top 170%",
           end: "bottom bottom",
           scrub: 3,
           markers: true,
@@ -40,11 +40,11 @@ function Page2() {
       });
 
       gsap.to("#img3", {
-        rotate: 5,
+        rotate: 10,
         duration: 3,
         scrollTrigger: {
           trigger: "#img3",
-          start: "top 200%",
+          start: "top 170%",
           end: "bottom bottom",
           scrub: 3,
           markers: true,
@@ -59,15 +59,18 @@ function Page2() {
     <div>
       <div
         ref={container1}
-        className="w-screen md:flex-row  flex justify-center items-center"
+        className="w-screen md:h-[100vh] mt-10 md:flex-row  flex justify-center items-center"
       >
         <div className="md:w-[20vw] md:text-4xl">
-          I am Vivek Jha, I create unconventional yet functional & visually
-          pleasing interfaces for the mobile and web.
+          <p>
+            I am Vivek Jha, I create unconventional yet functional & visually
+            pleasing interfaces for the mobile and web.
+          </p>
         </div>
 
         <div className="md:w-[70vw] md:h-full flex relative flex-row justify-center items-center gap-5 mt-10 mr-20">
-          <div
+          <a
+            href="https://the-uncle-cafe.vercel.app/"
             id="img1"
             className="md:w-[33vw] absolute -rotate-15 rounded-[50px] top-0 md:h-[90vh] object-cover overflow-hidden"
           >
@@ -76,9 +79,10 @@ function Page2() {
               src={img3}
               alt=""
             />
-          </div>
+          </a>
 
-          <div
+          <a
+            href="https://theartisticwing.vercel.app/"
             id="img2"
             className="md:w-[33vw] absolute -rotate-10 rounded-[50px] top-10 right-30 md:h-[90vh] object-cover z-5 overflow-hidden"
           >
@@ -87,9 +91,10 @@ function Page2() {
               src={img2}
               alt=""
             />
-          </div>
+          </a>
 
-          <div
+          <a
+            href="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html"
             id="img3"
             className="md:w-[33vw] absolute -rotate-5 rounded-[50px] top-20 right-10 md:h-[90vh] z-10 object-cover overflow-hidden"
           >
@@ -98,7 +103,7 @@ function Page2() {
               src={img1}
               alt=""
             />
-          </div>
+          </a>
         </div>
       </div>
     </div>

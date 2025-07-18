@@ -83,7 +83,7 @@ function Page1() {
           </div>
 
           {/* Developer text */}
-          <div id="row2" className="text-[23vw] md:text-[14vw] md:mt-4 md:mt-0">
+          <div id="row2" className="text-[21vw] md:text-[14vw] md:mt-4 md:mt-0">
             Developer
           </div>
         </div>
