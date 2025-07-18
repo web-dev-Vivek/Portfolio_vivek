@@ -61,10 +61,13 @@ function Page2() {
         ref={container1}
         className="w-screen md:h-[100vh] mt-10 md:flex-row  flex justify-center items-center"
       >
-        <div className="md:w-[20vw] md:text-4xl">
-          <p>
-            I am Vivek Jha, I create unconventional yet functional & visually
-            pleasing interfaces for the mobile and web.
+        <div className="md:w-[24vw] md:pl-10 md:text-4xl">
+          <p className="text-5xl" style={{ fontFamily: "Oswald, sans-serif" }}>
+            I am Vivek Jha, I create{" "}
+            <span style={{ color: "rgb(20, 207, 147)" }}>unconventional</span>{" "}
+            <br />
+            yet functional & visually pleasing interfaces for the mobile and
+            web.
           </p>
         </div>
 

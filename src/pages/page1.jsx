@@ -13,7 +13,7 @@ function Page1() {
       tl.from("#row1 h1", {
         y: 200,
         opacity: 0,
-        duration: 1.2,
+        duration: 0.5,
         delay: 3,
         ease: "power4.out",
       });
@@ -21,7 +21,7 @@ function Page1() {
       tl.from("#row2 ", {
         y: 200,
         opacity: 0,
-        duration: 1.2,
+        duration: 0.5,
         ease: "power4.out",
       });
     },
