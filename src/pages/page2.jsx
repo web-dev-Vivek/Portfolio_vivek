@@ -21,7 +21,6 @@ function Page2() {
           start: "top 170%", // 🟢 early start
           end: "bottom bottom", // 🔴 end at full scroll
           scrub: 3,
-          markers: true,
         },
         ease: "power1.out",
       });
@@ -34,7 +33,6 @@ function Page2() {
           start: "top 170%",
           end: "bottom bottom",
           scrub: 3,
-          markers: true,
         },
         ease: "power1.out",
       });
@@ -47,7 +45,6 @@ function Page2() {
           start: "top 170%",
           end: "bottom bottom",
           scrub: 3,
-          markers: true,
         },
         ease: "power1.out",
       });
