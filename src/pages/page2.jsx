@@ -70,7 +70,7 @@ function Page2() {
               <img
                 src={img3}
                 alt="Project 1"
-                className="w-full md:h-auto grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full md:h-auto md:grayscale md:hover:grayscale-0 transition-all duration-1000"
               />
             </a>
 
@@ -83,7 +83,7 @@ function Page2() {
               <img
                 src={img2}
                 alt="Project 2"
-                className="w-full md:h-auto grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full md:h-auto md:grayscale md:hover:grayscale-0 transition-all duration-1000"
               />
             </a>
 
@@ -96,7 +96,7 @@ function Page2() {
               <img
                 src={img1}
                 alt="Project 3"
-                className="w-full md:h-auto grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full md:h-auto md:grayscale md:hover:grayscale-0 transition-all duration-1000"
               />
             </a>
           </div>
