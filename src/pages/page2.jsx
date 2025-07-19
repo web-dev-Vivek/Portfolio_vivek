@@ -65,7 +65,7 @@ function Page2() {
             <a
               href="https://the-uncle-cafe.vercel.app/"
               id="img1"
-              className="w-[50vw] h-[350px] absolute md:w-[33vw] left-50 z-[-10] rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden z-10 md:absolute md:top-0 left-20 md:left-40 -rotate-10 md:-rotate-25"
+              className="w-[50vw] h-[340px] absolute md:w-[33vw] left-50  rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden md:absolute md:top-0 left-20 md:left-40 -rotate-10 md:-rotate-25"
             >
               <img
                 src={img3}
@@ -78,7 +78,7 @@ function Page2() {
             <a
               href="https://theartisticwing.vercel.app/"
               id="img2"
-              className="w-[50vw] h-[350px] block h-[80vh] md:w-[33vw] rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden z-20 md:absolute md:top-10 -rotate-10 md:-rotate-10"
+              className="w-[50vw] h-[340px] block h-[80vh] md:w-[33vw] ] rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden md:absolute md:top-10 -rotate-10 md:-rotate-10"
             >
               <img
                 src={img2}
@@ -91,7 +91,7 @@ function Page2() {
             <a
               href="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html"
               id="img3"
-              className="w-[50vw] h-[350px] absolute md:pt-1 mt-[70px] top-0 right-50  md:w-[33vw] rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden z-30 md:absolute md:top-20 md:right-10 -rotate-10 md:-rotate-5"
+              className="w-[50vw] h-[340px] absolute md:pt-1 mt-[70px] ] top-0 right-50  md:w-[33vw] rounded-[30px] h-[80vh] md:h-[90vh] object-center overflow-hidden md:absolute md:top-20 md:right-10 -rotate-10 md:-rotate-5"
             >
               <img
                 src={img1}
