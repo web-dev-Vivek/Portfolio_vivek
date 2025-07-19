@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import "./page1.css";
 
 function Page1() {
-  const container = useRef(); // Container for scoped animation
+  const container = useRef();
 
   useGSAP(
     () => {
@@ -18,7 +18,7 @@ function Page1() {
         ease: "power4.out",
       });
 
-      tl.from("#row2 ", {
+      tl.from("#row2", {
         y: 200,
         opacity: 0,
         duration: 0.5,
@@ -26,11 +26,11 @@ function Page1() {
       });
     },
     { scope: container }
-  ); // Scoped to this component
+  );
 
   return (
     <div ref={container}>
-      <div className="w-screen md:h-[90vh] text-black flex flex-col justify-center items-center">
+      <div className="w-screen md:h-[90vh] flex flex-col justify-center items-center bg-[rgb(21,21,21)] text-white md:bg-white md:text-black">
         <div
           id="row1"
           className="flex leading-none items-center mt-30 md:flex-row flex-col md:gap-20"
@@ -51,12 +51,10 @@ function Page1() {
           </div>
         </div>
 
-        {/* ROW 2 */}
         <div
           className="text-[16vw] w-[100vw] font-bold flex flex-col md:flex-row items-center justify-center text-center md:text-left"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
-          {/* FRONTEND SVG */}
           <div className="md:w-auto w-full mt-5 flex justify-center items-center">
             <svg
               style={{ color: "rgb(20, 207, 147)" }}
@@ -82,7 +80,6 @@ function Page1() {
             </svg>
           </div>
 
-          {/* Developer text */}
           <div id="row2" className="text-[21vw] md:text-[14vw] md:mt-4 md:mt-0">
             Developer
           </div>
