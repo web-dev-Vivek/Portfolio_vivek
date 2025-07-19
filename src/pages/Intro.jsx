@@ -13,7 +13,7 @@ function Intro() {
       gsap.to(intro1Ref.current, {
         y: "-100%",
         duration: 1.2,
-        delay: 1.5,
+        delay: 0.5,
         ease: "power4.inOut",
         onComplete: () => {
           intro1Ref.current.style.display = "none";

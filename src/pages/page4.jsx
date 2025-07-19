@@ -13,12 +13,12 @@ function Page4() {
       gsap.utils.toArray(".scroll-image").forEach((img) => {
         gsap.fromTo(
           img,
-          { y: -100 }, // Start with image shifted up
+          { y: -100 },
           {
-            y: 0, // Scroll brings it down into view
+            y: 0,
             ease: "power1.out",
             scrollTrigger: {
-              trigger: containerRef.current,
+              trigger: img.parentElement.parentElement,
               start: "top 160%",
               end: "bottom bottom",
               scrub: 2,
@@ -32,9 +32,9 @@ function Page4() {
   );
 
   return (
-    <div className="w-screen md:pt-40 bg-[rgb(242,242,242)]">
+    <div className="w-screen md:pt-40 bg-[rgb(242,242,242)]" ref={containerRef}>
       {/* Title Section */}
-      <div className="w-full flex flex-col md:flex-row gap-6 md:gap-20 justify-center items-center h-auto md:h-40">
+      <div className="w-full flex mb-20 flex-row gap-6 md:gap-20 justify-center items-center h-auto md:h-40">
         <div
           style={{ fontFamily: "Oswald, sans-serif" }}
           className="text-5xl md:text-8xl font-bold text-center md:text-left"
@@ -77,28 +77,68 @@ function Page4() {
         </div>
       </div>
 
-      {/* Image Section */}
-      <div
-        ref={containerRef}
-        id="container"
-        className="w-screen h-[100vh] flex flex-col md:flex-row justify-evenly items-end md:pb-[5vh] gap-6 px-4"
-      >
-        {/* Image 1 */}
-        <div className="w-full md:w-[40vw] h-[90vh] overflow-hidden rounded-[50px] flex justify-center items-start">
-          <img
-            className="scroll-image w-full min-h-[120%] object-cover object-top"
-            src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
-            alt="scroll-animated"
-          />
+      {/* Image Sections Individually */}
+      <div className="space-y-20 md:px-4 ">
+        {/* Section 1 */}
+        <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:pb-[5vh] gap-6">
+          <a
+            href="https://the-uncle-cafe.vercel.app/"
+            className="w-[90vw] md:w-[40vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
+          >
+            <img
+              className="scroll-image w-full min-h-[120%] object-cover object-top"
+              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
+              alt="scroll-animated"
+            />
+          </a>
+          <a
+            href=""
+            className="w-[90vw] md:w-[30vw] h-[50vh] md:h-[60vh] overflow-hidden rounded-[50px] flex justify-center items-start"
+          >
+            <img
+              className="scroll-image w-full min-h-[120%] object-cover object-top"
+              src="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
+              alt="scroll-animated"
+            />
+          </a>
         </div>
 
-        {/* Image 2 */}
-        <div className="w-full md:w-[30vw] h-[60vh] overflow-hidden rounded-[50px] flex justify-center items-start">
-          <img
-            className="scroll-image w-full min-h-[120%] object-cover object-top"
-            src="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
-            alt="scroll-animated"
-          />
+        {/* Section 2 */}
+        <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:pb-[5vh] gap-6">
+          <a
+            href="https://the-uncle-cafe.vercel.app/"
+            className="w-[90vw] md:w-[50vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
+          >
+            <img
+              className="scroll-image w-full min-h-[120%] object-cover object-top"
+              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
+              alt="scroll-animated"
+            />
+          </a>
+        </div>
+
+        {/* Section 3 */}
+        <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:p-[5vh] gap-6">
+          <a
+            href=""
+            className="w-[90vw] md:w-[30vw] h-[50vh] md:h-[60vh] overflow-hidden rounded-[50px] flex justify-center items-start"
+          >
+            <img
+              className="scroll-image w-full min-h-[120%] object-cover object-top"
+              src="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
+              alt="scroll-animated"
+            />
+          </a>
+          <a
+            href="https://the-uncle-cafe.vercel.app/"
+            className="w-[90vw] md:w-[40vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
+          >
+            <img
+              className="scroll-image w-full min-h-[120%] object-cover object-top"
+              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
+              alt="scroll-animated"
+            />
+          </a>
         </div>
       </div>
     </div>
