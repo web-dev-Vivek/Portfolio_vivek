@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import HoverImageBox from "../components/image.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,67 +79,68 @@ function Page4() {
       </div>
 
       {/* Image Sections Individually */}
-      <div className="space-y-20 md:px-4 ">
+      <div className="space-y-20 group-hover:bg-black md:px-4 ">
         {/* Section 1 */}
         <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:pb-[5vh] gap-6">
-          <a
-            href="https://the-uncle-cafe.vercel.app/"
-            className="w-[90vw] md:w-[40vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
-          >
-            <img
-              className="scroll-image w-full min-h-[120%] object-cover object-top"
-              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
-              alt="scroll-animated"
-            />
-          </a>
-          <a
-            href=""
-            className="w-[90vw] md:w-[30vw] h-[50vh] md:h-[60vh] overflow-hidden rounded-[50px] flex justify-center items-start"
-          >
-            <img
-              className="scroll-image w-full min-h-[120%] object-cover object-top"
-              src="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
-              alt="scroll-animated"
-            />
-          </a>
+          <HoverImageBox
+            className="group"
+            mainImage="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
+            hoverImages={[
+              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
+              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
+              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
+            ]}
+            width="40vw"
+            height="90vh"
+          />
+          <HoverImageBox
+            mainImage="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
+            hoverImages={[
+              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
+              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
+              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
+            ]}
+            width="30vw"
+            height="50vh"
+          />
         </div>
 
         {/* Section 2 */}
         <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:pb-[5vh] gap-6">
-          <a
-            href="https://the-uncle-cafe.vercel.app/"
-            className="w-[90vw] md:w-[50vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
-          >
-            <img
-              className="scroll-image w-full min-h-[120%] object-cover object-top"
-              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
-              alt="scroll-animated"
-            />
-          </a>
+          <HoverImageBox
+            mainImage="https://source.unsplash.com/random/300x200"
+            hoverImages={[
+              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
+              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
+              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
+            ]}
+            width="50vw"
+            height="200px"
+          />
         </div>
 
         {/* Section 3 */}
         <div className="w-screen flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end md:p-[5vh] gap-6">
-          <a
-            href=""
-            className="w-[90vw] md:w-[30vw] h-[50vh] md:h-[60vh] overflow-hidden rounded-[50px] flex justify-center items-start"
-          >
-            <img
-              className="scroll-image w-full min-h-[120%] object-cover object-top"
-              src="https://i.pinimg.com/736x/89/f4/6f/89f46f58253df7110dc78086d7905759.jpg"
-              alt="scroll-animated"
-            />
-          </a>
-          <a
-            href="https://the-uncle-cafe.vercel.app/"
-            className="w-[90vw] md:w-[40vw] h-[50vh] md:h-[90vh] cursor-pointer overflow-hidden rounded-[50px] flex justify-center items-start"
-          >
-            <img
-              className="scroll-image w-full min-h-[120%] object-cover object-top"
-              src="https://i.pinimg.com/736x/7b/c6/34/7bc6341de1cf45f08e1fec5764ce9814.jpg"
-              alt="scroll-animated"
-            />
-          </a>
+          <HoverImageBox
+            mainImage="https://source.unsplash.com/random/300x200"
+            hoverImages={[
+              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
+              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
+              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
+            ]}
+            width="40vw"
+            height="200px"
+          />
+          <HoverImageBox
+            mainImage="https://source.unsplash.com/random/300x200"
+            hoverImages={[
+              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
+              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
+              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
+            ]}
+            width="40vw"
+            height="200px"
+          />
         </div>
       </div>
     </div>
