@@ -16,21 +16,20 @@ const HoverImageBox = ({
   const hoverImgRef = useRef(null);
   const intervalRef = useRef(null);
   const indexRef = useRef(0);
-  const mainImgRef = useRef(null);
+  const mainImgRef = useRef(null); // 👈 new ref for scroll animation
 
   // 🔄 Scroll-based animation
   useGSAP(() => {
     if (!mainImgRef.current) return;
 
     gsap.to(mainImgRef.current, {
-      y: 100, // Move down by 100px
+      y: 100, // Move down by 100px (you can adjust)
       ease: "none",
       scrollTrigger: {
         trigger: boxRef.current,
-        start: "top 150%",
+        start: "top 150%", // Adjust as needed
         end: "bottom top",
         scrub: 3,
-        markers: false, // set true to debug
       },
     });
   }, []);
@@ -103,37 +102,22 @@ const HoverImageBox = ({
         style={{
           width,
           height,
+          overflow: "hidden",
           borderRadius: "10px",
           cursor: "pointer",
           position: "relative",
           zIndex: 1,
           boxShadow: "0 5px 15px rgba(0,0,0,0.4)",
-          // ❌ No overflow here!
         }}
       >
-        {/* ✅ This wrapper handles the clipping properly */}
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-            overflow: "hidden",
-            borderRadius: "10px",
-          }}
-        >
-          <img
-            ref={mainImgRef}
-            src={mainImage}
-            alt="main"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </div>
+        <img
+          ref={mainImgRef} // 👈 attach ref here
+          src={mainImage}
+          alt="main"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
       </a>
 
-      {/* Hover preview box */}
       <div
         ref={hoverBoxRef}
         className="hover-box"
