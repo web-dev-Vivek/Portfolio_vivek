@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 const HoverImageBox = ({
   mainImage,
   hoverImages = [],
-  width = "300px",
-  height = "200px",
+  width = "50vw",
+  height = "70vh",
 }) => {
   const boxRef = useRef(null);
   const hoverBoxRef = useRef(null);
@@ -125,7 +125,8 @@ const HoverImageBox = ({
           position: "fixed",
           top: 0,
           left: 0,
-          width: "250px",
+          width: "30vw",
+          height: "40vh",
           background: "rgba(255,255,255,0.95)",
           borderRadius: "12px",
           boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
@@ -140,7 +141,7 @@ const HoverImageBox = ({
           ref={hoverImgRef}
           style={{
             width: "100%",
-            height: "120px",
+            height: "100%",
             borderRadius: "8px",
             objectFit: "cover",
             transition: "opacity 0.5s ease",
