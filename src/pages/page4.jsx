@@ -72,8 +72,8 @@ function Page4() {
             width="90vw"
             height="50vh"
             mdWidth="40vw"
-            mdHeight="90vh"
-            link="https://example.com/project1"
+            mdHeight="100vh"
+            link="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html"
           />
           <HoverImageBox
             mainImage={Art}
@@ -86,7 +86,7 @@ function Page4() {
             height="40vh"
             mdWidth="30vw"
             mdHeight="60vh"
-            link="https://example.com/project2"
+            link="https://theartisticwing.vercel.app/"
           />
         </div>
 
@@ -102,7 +102,7 @@ function Page4() {
             height="50vh"
             mdWidth="50vw"
             mdHeight="90vh"
-            link="https://example.com/project3"
+            link="https://web-dev-vivek.github.io/Today-Todoist/todist.html"
           />
         </div>
 
@@ -118,7 +118,7 @@ function Page4() {
             height="40vh"
             mdWidth="40vw"
             mdHeight="60vh"
-            link="https://yourproject.live"
+            link="https://portfolio-vivek-psi.vercel.app/"
           />
 
           <HoverImageBox

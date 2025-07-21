@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,7 +12,7 @@ const HoverImageBox = ({
   height = "50vh",
   mdWidth = "40vw",
   mdHeight = "90vh",
-  link = "#", // default link is '#'
+  link = "#",
 }) => {
   const boxRef = useRef(null);
   const hoverBoxRef = useRef(null);
@@ -20,6 +20,24 @@ const HoverImageBox = ({
   const intervalRef = useRef(null);
   const indexRef = useRef(0);
   const mainImgRef = useRef(null);
+
+  // ✅ responsive width and height state
+  const [boxStyle, setBoxStyle] = useState({ width, height });
+
+  useEffect(() => {
+    const updateSize = () => {
+      if (window.innerWidth >= 768) {
+        setBoxStyle({ width: mdWidth, height: mdHeight });
+      } else {
+        setBoxStyle({ width, height });
+      }
+    };
+
+    updateSize(); // set on mount
+    window.addEventListener("resize", updateSize); // update on resize
+
+    return () => window.removeEventListener("resize", updateSize);
+  }, [width, height, mdWidth, mdHeight]);
 
   // Scroll animation
   useGSAP(() => {
@@ -37,7 +55,7 @@ const HoverImageBox = ({
     });
   }, []);
 
-  // Hover image animation
+  // Hover animation
   useGSAP(() => {
     const box = boxRef.current;
     const hoverBox = hoverBoxRef.current;
@@ -106,8 +124,7 @@ const HoverImageBox = ({
         ref={boxRef}
         className="image-container"
         style={{
-          width: width,
-          height: height,
+          ...boxStyle,
           overflow: "hidden",
           borderRadius: "10px",
           cursor: "pointer",
@@ -160,16 +177,6 @@ const HoverImageBox = ({
           alt="hover"
         />
       </div>
-
-      {/* Responsive Style override using media query (optional) */}
-      <style>{`
-        @media (min-width: 768px) {
-          .image-container {
-            width: ${mdWidth} !important;
-            height: ${mdHeight} !important;
-          }
-        }
-      `}</style>
     </>
   );
 };
