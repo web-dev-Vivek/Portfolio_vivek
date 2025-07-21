@@ -61,7 +61,7 @@ function Page4() {
 
       {/* Image Sections */}
       <div className="space-y-20 md:px-4">
-        <div className="flex flex-col md:flex-row justify-evenly items-end gap-6">
+        <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6">
           <HoverImageBox
             mainImage={Img1}
             hoverImages={[
@@ -69,8 +69,11 @@ function Page4() {
               "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
               "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
             ]}
-            width="40vw"
-            height="90vh"
+            width="90vw"
+            height="50vh"
+            mdWidth="40vw"
+            mdHeight="90vh"
+            link="https://example.com/project1"
           />
           <HoverImageBox
             mainImage={Art}
@@ -79,12 +82,15 @@ function Page4() {
               "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
               "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
             ]}
-            width="30vw"
-            height="60vh"
+            width="90vw"
+            height="40vh"
+            mdWidth="30vw"
+            mdHeight="60vh"
+            link="https://example.com/project2"
           />
         </div>
 
-        <div className="flex flex-col md:flex-row justify-evenly items-end gap-6">
+        <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6">
           <HoverImageBox
             mainImage={img3}
             hoverImages={[
@@ -92,12 +98,15 @@ function Page4() {
               "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
               "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
             ]}
-            width="50vw"
-            height="90vh"
+            width="90vw"
+            height="50vh"
+            mdWidth="50vw"
+            mdHeight="90vh"
+            link="https://example.com/project3"
           />
         </div>
 
-        <div className="flex flex-col md:flex-row justify-evenly items-end gap-6 pb-[5vh]">
+        <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6 pb-[5vh]">
           <HoverImageBox
             mainImage={img4}
             hoverImages={[
@@ -105,9 +114,13 @@ function Page4() {
               "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
               "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
             ]}
-            width="40vw"
-            height="60vh"
+            width="90vw"
+            height="40vh"
+            mdWidth="40vw"
+            mdHeight="60vh"
+            link="https://yourproject.live"
           />
+
           <HoverImageBox
             mainImage={Img1}
             hoverImages={[
@@ -115,8 +128,11 @@ function Page4() {
               "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
               "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
             ]}
-            width="30vw"
-            height="50vh"
+            width="90vw"
+            height="35vh"
+            mdWidth="30vw"
+            mdHeight="50vh"
+            link="https://example.com/project4"
           />
         </div>
       </div>

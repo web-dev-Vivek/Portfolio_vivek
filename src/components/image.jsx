@@ -8,33 +8,36 @@ gsap.registerPlugin(ScrollTrigger);
 const HoverImageBox = ({
   mainImage,
   hoverImages = [],
-  width = "50vw",
-  height = "70vh",
+  width = "100vw",
+  height = "50vh",
+  mdWidth = "40vw",
+  mdHeight = "90vh",
+  link = "#", // default link is '#'
 }) => {
   const boxRef = useRef(null);
   const hoverBoxRef = useRef(null);
   const hoverImgRef = useRef(null);
   const intervalRef = useRef(null);
   const indexRef = useRef(0);
-  const mainImgRef = useRef(null); // 👈 new ref for scroll animation
+  const mainImgRef = useRef(null);
 
-  // 🔄 Scroll-based animation
+  // Scroll animation
   useGSAP(() => {
     if (!mainImgRef.current) return;
 
     gsap.to(mainImgRef.current, {
-      y: 100, // Move down by 100px (you can adjust)
+      y: 100,
       ease: "none",
       scrollTrigger: {
         trigger: boxRef.current,
-        start: "top 150%", // Adjust as needed
+        start: "top 150%",
         end: "bottom top",
         scrub: 3,
       },
     });
   }, []);
 
-  // 🖱️ Hover-based animation
+  // Hover image animation
   useGSAP(() => {
     const box = boxRef.current;
     const hoverBox = hoverBoxRef.current;
@@ -97,11 +100,14 @@ const HoverImageBox = ({
   return (
     <>
       <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
         ref={boxRef}
         className="image-container"
         style={{
-          width,
-          height,
+          width: width,
+          height: height,
           overflow: "hidden",
           borderRadius: "10px",
           cursor: "pointer",
@@ -111,10 +117,14 @@ const HoverImageBox = ({
         }}
       >
         <img
-          ref={mainImgRef} // 👈 attach ref here
+          ref={mainImgRef}
           src={mainImage}
           alt="main"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
         />
       </a>
 
@@ -150,6 +160,16 @@ const HoverImageBox = ({
           alt="hover"
         />
       </div>
+
+      {/* Responsive Style override using media query (optional) */}
+      <style>{`
+        @media (min-width: 768px) {
+          .image-container {
+            width: ${mdWidth} !important;
+            height: ${mdHeight} !important;
+          }
+        }
+      `}</style>
     </>
   );
 };
