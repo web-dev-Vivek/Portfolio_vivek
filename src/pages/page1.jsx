@@ -39,7 +39,7 @@ function Page1() {
             className="text-[30vw] md:text-[16vw] overflow-hidden font-bold"
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
-            It's Me
+            It's Vivek
           </h1>
           <div className="flex flex-row justify-center items-center gap-10 pl-10 pr-10 word-wrap">
             <p className="text-[12px] md:w-[10vw] text-gray-400">
