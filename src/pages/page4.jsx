@@ -38,7 +38,10 @@ function Page4() {
   );
 
   return (
-    <div className="w-screen md:pt-40 bg-[rgb(242,242,242)]" ref={containerRef}>
+    <div
+      className="w-screen md:pt-40 bg-[rgb(242,242,242)] group-hover:bg-red-600"
+      ref={containerRef}
+    >
       {/* Title */}
       <div className="w-full flex mb-20 flex-row gap-6 md:gap-20 justify-center items-center h-auto md:h-40">
         <div

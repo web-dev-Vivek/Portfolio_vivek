@@ -122,7 +122,7 @@ const HoverImageBox = ({
         target="_blank"
         rel="noopener noreferrer"
         ref={boxRef}
-        className="image-container"
+        className="image-container group"
         style={{
           ...boxStyle,
           overflow: "hidden",
