@@ -8,7 +8,28 @@ import Img1 from "../assets/img1.jpeg";
 import Art from "../assets/art.jpg";
 import img3 from "../assets/todoist.jpg";
 import img4 from "../assets/current.jpg";
-
+import N1 from "../assets/N1.png";
+import N2 from "../assets/N2.png";
+import N3 from "../assets/N3.png";
+import N4 from "../assets/N4.png";
+import N5 from "../assets/N5.png";
+import A1 from "../assets/A1.png";
+import A2 from "../assets/A2.png";
+import A3 from "../assets/A3.png";
+import A4 from "../assets/A4.png";
+import T1 from "../assets/T1.png";
+import T2 from "../assets/T2.png";
+import T3 from "../assets/T3.png";
+import T4 from "../assets/T4.png";
+import P1 from "../assets/P1.png";
+import P2 from "../assets/P2.png";
+import P3 from "../assets/P3.png";
+import P4 from "../assets/P4.png";
+import U1 from "../assets/U1.png";
+import U2 from "../assets/U2.png";
+import U3 from "../assets/U3.png";
+import U4 from "../assets/U4.png";
+import Burger from "../assets/Burger.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 function Page4() {
@@ -66,12 +87,9 @@ function Page4() {
       <div className="space-y-20 md:px-4">
         <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6">
           <HoverImageBox
+            className="object-contain"
             mainImage={Img1}
-            hoverImages={[
-              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
-              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
-              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
-            ]}
+            hoverImages={[N1, N2, N3, N4, N5]}
             width="90vw"
             height="50vh"
             mdWidth="40vw"
@@ -80,11 +98,7 @@ function Page4() {
           />
           <HoverImageBox
             mainImage={Art}
-            hoverImages={[
-              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
-              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
-              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
-            ]}
+            hoverImages={[A1, A2, A3, A4]}
             width="90vw"
             height="40vh"
             mdWidth="30vw"
@@ -96,11 +110,7 @@ function Page4() {
         <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6">
           <HoverImageBox
             mainImage={img3}
-            hoverImages={[
-              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
-              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
-              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
-            ]}
+            hoverImages={[T1, T2, T3, T4]}
             width="90vw"
             height="50vh"
             mdWidth="50vw"
@@ -112,11 +122,7 @@ function Page4() {
         <div className="flex flex-col md:flex-row md:justify-evenly justify-center items-center md:items-end gap-6 pb-[5vh]">
           <HoverImageBox
             mainImage={img4}
-            hoverImages={[
-              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
-              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
-              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
-            ]}
+            hoverImages={[P1, P2, P3, P4]}
             width="90vw"
             height="40vh"
             mdWidth="40vw"
@@ -125,12 +131,8 @@ function Page4() {
           />
 
           <HoverImageBox
-            mainImage={Img1}
-            hoverImages={[
-              "https://i.ytimg.com/vi/TvngY4unjn4/hqdefault.jpg",
-              "https://i.ytimg.com/vi/b4b1cMVZOUU/hqdefault.jpg",
-              "https://i.ytimg.com/vi/nJZcbidTutE/hqdefault.jpg",
-            ]}
+            mainImage={Burger}
+            hoverImages={[U1, U2, U3, U4]}
             width="90vw"
             height="35vh"
             mdWidth="30vw"

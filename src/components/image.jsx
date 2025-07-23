@@ -122,7 +122,7 @@ const HoverImageBox = ({
         target="_blank"
         rel="noopener noreferrer"
         ref={boxRef}
-        className="image-container group"
+        className="image-container "
         style={{
           ...boxStyle,
           overflow: "hidden",
@@ -154,7 +154,9 @@ const HoverImageBox = ({
           left: 0,
           width: "30vw",
           height: "40vh",
-          background: "rgba(255,255,255,0.95)",
+          background: "rgba(255, 255, 255, 0.1)", // white with 10% opacity
+          backdropFilter: "blur(10px)", // add blur for glass effect
+          WebkitBackdropFilter: "blur(10px)", // Safari support
           borderRadius: "12px",
           boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
           padding: "12px",
@@ -170,7 +172,7 @@ const HoverImageBox = ({
             width: "100%",
             height: "100%",
             borderRadius: "8px",
-            objectFit: "cover",
+            objectFit: "contain",
             transition: "opacity 0.5s ease",
           }}
           src=""
