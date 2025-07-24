@@ -1,13 +1,18 @@
 import React from "react";
 
-function page5() {
+function Page5() {
   return (
-    <div>
-      <div className="w-screen h-[100vh] flex justify-center items-center">
-        hello
+    <div className="bg-[rgb(37,59,57)]">
+      <div className="w-screen h-[140vh] flex justify-center text-center font-bold items-center word-wrap">
+        <h1
+          style={{ fontFamily: "Cormorant Garamond, serif" }}
+          className="text-white text-8xl"
+        >
+          LET'S TALK <br /> ABOUT SOMETHING CREATIVE
+        </h1>
       </div>
     </div>
   );
 }
 
-export default page5;
+export default Page5;
