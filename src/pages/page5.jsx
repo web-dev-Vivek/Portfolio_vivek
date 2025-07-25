@@ -50,32 +50,32 @@ function Page5() {
           <div className="mt-40 w-full h-full flex flex-wrap justify-center items-center md:gap-15 p-4">
             <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
               <div>
-                <h1 className="text-3xl">INSTAGRAM</h1>
-                <p>@vocalist_vivek</p>
+                <h1 className="text-3xl text-start">INSTAGRAM</h1>
+                <p className="text-start">@vocalist_vivek</p>
               </div>
               <div>hi</div>
             </div>
 
             <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
               <div>
-                <h1 className="text-3xl">X</h1>
-                <p>@web_dev_vivek</p>
+                <h1 className="text-3xl text-start">X</h1>
+                <p className="text-start">@web_dev_vivek</p>
               </div>
               <div>hi</div>
             </div>
 
             <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
               <div>
-                <h1 className="text-3xl">LinkedIn</h1>
-                <p>@Vivek Jha</p>
+                <h1 className="text-3xl text-start">LinkedIn</h1>
+                <p className="text-start">@Vivek Jha</p>
               </div>
               <div>hi</div>
             </div>
 
             <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
               <div>
-                <h1 className="text-3xl">Github</h1>
-                <p>@web-dev-Vivek</p>
+                <h1 className="text-3xl text-start">Github</h1>
+                <p className="text-start">@web-dev-Vivek</p>
               </div>
               <div>hi</div>
             </div>
