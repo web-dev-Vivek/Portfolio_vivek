@@ -48,21 +48,36 @@ function Page5() {
             </button>
           </div>
           <div className="mt-40 w-full h-full flex flex-wrap justify-center items-center md:gap-15 p-4">
-            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
-              <h1>INSTAGRAM</h1>
-              <p>@vocalist_vivek</p>
+            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
+              <div>
+                <h1 className="text-3xl">INSTAGRAM</h1>
+                <p>@vocalist_vivek</p>
+              </div>
+              <div>hi</div>
             </div>
-            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
-              <h1>X</h1>
-              <p>@web_dev_vivek</p>
+
+            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
+              <div>
+                <h1 className="text-3xl">X</h1>
+                <p>@web_dev_vivek</p>
+              </div>
+              <div>hi</div>
             </div>
-            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
-              <h1>LinkedIn</h1>
-              <p>@Vivek Jha</p>
+
+            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
+              <div>
+                <h1 className="text-3xl">LinkedIn</h1>
+                <p>@Vivek Jha</p>
+              </div>
+              <div>hi</div>
             </div>
-            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
-              <h1>Github</h1>
-              <p>@web-dev-Vivek</p>
+
+            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
+              <div>
+                <h1 className="text-3xl">Github</h1>
+                <p>@web-dev-Vivek</p>
+              </div>
+              <div>hi</div>
             </div>
           </div>
         </div>
