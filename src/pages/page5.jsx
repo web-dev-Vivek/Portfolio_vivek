@@ -50,19 +50,19 @@ function Page5() {
           <div className="mt-40 w-full h-full flex flex-wrap justify-center items-center md:gap-15 p-4">
             <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
               <h1>INSTAGRAM</h1>
-              <p></p>
+              <p>@vocalist_vivek</p>
             </div>
             <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
               <h1>X</h1>
-              <p></p>
+              <p>@web_dev_vivek</p>
             </div>
             <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
               <h1>LinkedIn</h1>
-              <p></p>
+              <p>@Vivek Jha</p>
             </div>
             <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
               <h1>Github</h1>
-              <p></p>
+              <p>@web-dev-Vivek</p>
             </div>
           </div>
         </div>
