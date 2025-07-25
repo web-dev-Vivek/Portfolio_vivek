@@ -1,16 +1,21 @@
 import React from "react";
+import Insta from "../assets/instagram.png";
+import Link from "../assets/linkedin.png";
+import Twit from "../assets/twitter.png";
+import Git from "../assets/git.png";
 
 function Page5() {
   return (
     <div className="bg-[rgb(37,59,57)]">
-      <div className="w-screen h-[170vh] relative flex justify-center text-center font-bold items-top word-wrap pt-20 md:pt-40">
+      <div className="w-screen min-h-screen md:h-[150vh] relative flex flex-col items-center text-center pt-20 md:pt-40">
         <h1
           style={{ fontFamily: "Cormorant Garamond, serif" }}
-          className="text-white md:text-8xl text-5xl"
+          className="text-white text-5xl md:text-8xl font-bold"
         >
           LET'S TALK <br /> ABOUT SOMETHING CREATIVE
         </h1>
-        <div className="absolute md:top-[370px] left-[50px]">
+
+        <div className="absolute top-[28rem] md:top-[370px] left-6 md:left-[50px]">
           <svg
             className="o-ui-arrow mb-6 w-10 h-10 md:w-16 md:h-16"
             viewBox="0 0 64 64"
@@ -32,54 +37,48 @@ function Page5() {
               strokeLinejoin="round"
             />
           </svg>
-          <div className="flex flex-col mt-[20vh] md:flex-row justify-evenly items-center gap-4 md:gap-10">
-            <button className="group relative overflow-hidden w-[90vw] md:w-[45vw] h-[20vh] border-2 border-white rounded-full text-white transition-all duration-20">
-              <span className="absolute inset-0 bg-white scale-0 group-hover:scale-150 rounded-full transition-transform duration-500 ease-out z-0"></span>
-              <span className="relative z-10 group-hover:text-black transition-colors duration-20">
-                Write a Message
-              </span>
-            </button>
+        </div>
 
-            <button className="group relative overflow-hidden w-[90vw] md:w-[45vw] h-[20vh] border-2 border-white rounded-full text-white transition-all duration-20">
-              <span className="absolute inset-0 bg-white scale-0 group-hover:scale-150 rounded-full transition-transform duration-500 ease-out z-0"></span>
-              <span className="relative z-10 group-hover:text-black transition-colors duration-20">
-                Discuss Project
-              </span>
-            </button>
-          </div>
-          <div className="mt-40 w-full h-full flex flex-wrap justify-center items-center md:gap-15 p-4">
-            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
-              <div>
-                <h1 className="text-3xl text-start">INSTAGRAM</h1>
-                <p className="text-start">@vocalist_vivek</p>
-              </div>
-              <div>hi</div>
-            </div>
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row justify-evenly items-center gap-6 md:gap-10 mt-32 w-full px-4">
+          <button className="group relative overflow-hidden w-full md:w-[45vw] h-[20vh] border-2 border-white rounded-full text-white transition-all duration-300">
+            <span className="absolute inset-0 bg-white scale-0 group-hover:scale-150 rounded-full transition-transform duration-500 ease-out z-0"></span>
+            <span className="relative z-10 group-hover:text-black transition-colors duration-300">
+              Write a Message
+            </span>
+          </button>
 
-            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
-              <div>
-                <h1 className="text-3xl text-start">X</h1>
-                <p className="text-start">@web_dev_vivek</p>
-              </div>
-              <div>hi</div>
-            </div>
+          <button className="group relative overflow-hidden w-full md:w-[45vw] h-[20vh] border-2 border-white rounded-full text-white transition-all duration-300">
+            <span className="absolute inset-0 bg-white scale-0 group-hover:scale-150 rounded-full transition-transform duration-500 ease-out z-0"></span>
+            <span className="relative z-10 group-hover:text-black transition-colors duration-300">
+              Discuss Project
+            </span>
+          </button>
+        </div>
 
-            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
+        {/* Social Links */}
+        <div className="mt-20 w-full flex flex-wrap justify-center items-center gap-8 md:gap-12 px-4">
+          {[
+            { title: "INSTAGRAM", handle: "@vocalist_vivek", icon: Insta },
+            { title: "X", handle: "@web_dev_vivek", icon: Link },
+            { title: "LinkedIn", handle: "@Vivek Jha", icon: Twit },
+            { title: "Github", handle: "@web-dev-Vivek", icon: Git },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="border-t border-white w-full md:w-[20vw] h-[20vh] md:h-[15vh] text-white flex items-center justify-between p-4"
+            >
               <div>
-                <h1 className="text-3xl text-start">LinkedIn</h1>
-                <p className="text-start">@Vivek Jha</p>
+                <h1 className="text-2xl md:text-3xl text-start">
+                  {item.title}
+                </h1>
+                <p className="text-start">{item.handle}</p>
               </div>
-              <div>hi</div>
-            </div>
-
-            <div className="border-t border-white w-[90vw] md:w-[20vw] h-[30vh] md:h-[15vh] text-white flex items-center justify-between p-4">
               <div>
-                <h1 className="text-3xl text-start">Github</h1>
-                <p className="text-start">@web-dev-Vivek</p>
+                <img className="w-[30px] md:w-[35px]" src={item.icon} alt="" />
               </div>
-              <div>hi</div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
