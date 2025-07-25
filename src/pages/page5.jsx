@@ -47,21 +47,21 @@ function Page5() {
               </span>
             </button>
           </div>
-          <div className="mt-40 w-full h-full bg-green-600 flex flex-wrap justify-center items-center gap-4 p-4">
-            <div className="w-[90vw] h-[30vh] md:w-[20vw] md:h-[20vh] bg-red-600">
-              <h1>hello</h1>
+          <div className="mt-40 w-full h-full flex flex-wrap justify-center items-center md:gap-15 p-4">
+            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
+              <h1>INSTAGRAM</h1>
               <p></p>
             </div>
-            <div className="w-[90vw] h-[30vh] md:w-[20vw] md:h-[20vh] bg-red-600">
-              <h1>hello</h1>
+            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
+              <h1>X</h1>
               <p></p>
             </div>
-            <div className="w-[90vw] h-[30vh] md:w-[20vw] md:h-[20vh] bg-red-600">
-              <h1>hello</h1>
+            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
+              <h1>LinkedIn</h1>
               <p></p>
             </div>
-            <div className="w-[90vw] h-[30vh] md:w-[20vw] md:h-[20vh] bg-red-600">
-              <h1>hello</h1>
+            <div className="border-t-1 border-white w-[90vw] text-white text-3xl text-left p-3 h-[30vh] md:w-[20vw] md:h-[15vh]">
+              <h1>Github</h1>
               <p></p>
             </div>
           </div>
