@@ -59,12 +59,33 @@ function Page5() {
         {/* Social Links */}
         <div className="mt-20 w-full flex flex-wrap justify-center items-center gap-8 md:gap-12 px-4">
           {[
-            { title: "INSTAGRAM", handle: "@vocalist_vivek", icon: Insta },
-            { title: "X", handle: "@web_dev_vivek", icon: Link },
-            { title: "LinkedIn", handle: "@Vivek Jha", icon: Twit },
-            { title: "Github", handle: "@web-dev-Vivek", icon: Git },
+            {
+              Link: "https://www.instagram.com/vocalist_vivek/",
+              title: "INSTAGRAM",
+              handle: "@vocalist_vivek",
+              icon: Insta,
+            },
+            {
+              Link: "https://github.com/web-dev-Vivek",
+              title: "X",
+              handle: "@web_dev_vivek",
+              icon: Link,
+            },
+            {
+              Link: "https://www.linkedin.com/in/vivek-jha-17ba6a306/",
+              title: "LinkedIn",
+              handle: "@Vivek Jha",
+              icon: Twit,
+            },
+            {
+              Link: "https://github.com/web-dev-Vivek",
+              title: "Github",
+              handle: "@web-dev-Vivek",
+              icon: Git,
+            },
           ].map((item, i) => (
-            <div
+            <a
+              href={item.Link}
               key={i}
               className="border-t border-white w-full md:w-[20vw] h-[20vh] md:h-[15vh] text-white flex items-center justify-between p-4"
             >
@@ -77,7 +98,7 @@ function Page5() {
               <div>
                 <img className="w-[30px] md:w-[35px]" src={item.icon} alt="" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
