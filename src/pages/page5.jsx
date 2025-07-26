@@ -87,15 +87,25 @@ function Page5() {
             <a
               href={item.Link}
               key={i}
-              className="border-t border-white w-full md:w-[20vw] h-[20vh] md:h-[15vh] text-white flex items-center justify-between p-4"
+              className="relative overflow-hidden border-t border-white w-full md:w-[20vw] h-[20vh] md:h-[15vh] text-white flex items-center justify-between px-4 group"
             >
-              <div>
+              {/* Hoverbox Animation Layer */}
+              <div
+                style={{
+                  backgroundColor: "rgb(20, 207, 147)",
+                }}
+                className="absolute top-[-100%] left-0 w-full h-full transition-all duration-500 ease-in-out group-hover:top-0 z-0"
+              ></div>
+
+              {/* Content Layer (above hoverbox) */}
+              <div className="relative z-10 flex flex-col justify-center">
                 <h1 className="text-2xl md:text-3xl text-start">
                   {item.title}
                 </h1>
                 <p className="text-start">{item.handle}</p>
               </div>
-              <div>
+
+              <div className="relative z-10">
                 <img className="w-[30px] md:w-[35px]" src={item.icon} alt="" />
               </div>
             </a>
